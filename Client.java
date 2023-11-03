@@ -19,6 +19,7 @@ public class Client {
 	/**
 	* Parameterized Constructor for Client with an adjustable balance 
 	* but still an empty shopping cart
+ 	* @param balance The balance of the Client
 	*/
 	public Client(double balance) {
 		this.balance = balance;
@@ -54,6 +55,7 @@ public class Client {
 
 	/**
 	* Prints out user's current balance and bought items in the cart
+ 	* @return A String object of the Client's balance and items in cart
 	*/
 	public String toString() {
 		System.out.print("\033[H\033[2J");  
