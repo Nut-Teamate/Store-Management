@@ -1,3 +1,8 @@
+/**
+ * This class represents a clothing item object
+ * @author Cayden Liao
+ * @version 1.0
+ */
 public class ClothingItem {
 	/**
 	* Initialize ClothingItem attributes of color and price
@@ -9,9 +14,9 @@ public class ClothingItem {
 	* Returns the color attribute value of the TShirt 
 	* @return The value of the color variable as a String
 	*/
-	public String getColor() {
-		return color;
-	}
+	//public String getColor() {
+	//	return color;
+	//}
 
 	/**
 	* Returns the price attribute value of the TShirt 
@@ -27,14 +32,6 @@ public class ClothingItem {
 	*/
 	public String toString() {
 		return "Color: " + color + "\nPrice: " + price;
-	}
-
-	/**
-	* No-argument Constructor for a ClothingItem with a white color and a price of 10
-	*/
-	public ClothingItem() {
-		color = "white";
-		price = 10.0;
 	}
 
 	/**

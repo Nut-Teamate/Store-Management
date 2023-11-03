@@ -1,3 +1,5 @@
 TShirt,black,10.0,Medium,Plain,Plain
 Shorts,white,10.0,38.7,21.0,false
 Shorts,green,20.0,10.1,21.0,true
+TShirt,gray,15.5,Large,Karn's Face,BLAKE
+TShirt,gold,800.0,Small,gold,gold

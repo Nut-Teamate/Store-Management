@@ -1,3 +1,10 @@
+/**
+ * This class represents the main store loop that creates the store and the client
+ * and listens to user inputs
+ * @author Cayden Liao
+ * @version 1.0
+ */
+
 import java.util.*;
 
 public class StoreRunner {
@@ -7,18 +14,18 @@ public class StoreRunner {
 		* Flush out terminal before starting the store
 		*/
 		System.out.print("\033[H\033[2J");  
-    		System.out.flush();
+    	System.out.flush();
     	
-    		/**
-    		* Create Scanner for user inputs
-    		*/
+    	/**
+    	* Create Scanner for user inputs
+    	*/
 		Scanner input = new Scanner(System.in);
 
 		/**
 		* Initialize the store and the client
 		*/
 		Store clothingStore = new Store("Cayden's Clothing Store", "Online", "inventory.txt");
-		Client erik = new Client(100.0);
+		Client erik = new Client(1000.0);
 
 		/**
 		* Print welcome message

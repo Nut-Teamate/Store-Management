@@ -1,3 +1,9 @@
+/**
+ * This class represents a Client object as a shopper in the store
+ * @author Cayden Liao
+ * @version 1.0
+ */
+
 import java.util.*;
 
 public class Client {
@@ -6,20 +12,11 @@ public class Client {
 	*/
 	private double balance;
 	private List<ClothingItem> cart = new ArrayList<>();
-
-	/**
-	* No argument Constructor for Client with a default balance of 1000.0 
-	* and an empty shopping cart
-	*/
-	public Client() {
-		balance = 1000.0;
-		cart = new ArrayList<>();
-	}
-
+	
 	/**
 	* Parameterized Constructor for Client with an adjustable balance 
 	* but still an empty shopping cart
- 	* @param balance The balance of the Client
+	* @param balance The inital balance of the client
 	*/
 	public Client(double balance) {
 		this.balance = balance;
@@ -55,7 +52,6 @@ public class Client {
 
 	/**
 	* Prints out user's current balance and bought items in the cart
- 	* @return A String object of the Client's balance and items in cart
 	*/
 	public String toString() {
 		System.out.print("\033[H\033[2J");  

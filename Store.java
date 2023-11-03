@@ -1,3 +1,9 @@
+/**
+ * This class represents the Store object that manages all the methods in the store
+ * @author Cayden Liao
+ * @version 1.0
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -39,6 +45,7 @@ public class Store {
 	* File must be in the format each new line as the type of 
 	* ClothingItem followed by its attributes seperated by commas
 	* @param file The file linked to the inventory
+	* @exception FileNotFoundException Throws an error if the inventory file is not found
 	*/
 	private void loadInventoryFromFile(String file) {
 		try {
@@ -71,6 +78,8 @@ public class Store {
 	* Purchases an item from the store
 	* Removes item from inventory and puts in Client's cart
 	* Subtracts Client's total balance with the price of bought item
+	* Contributes to overall expansion of the Store with the ability to
+	* handle multiple Clients purchases
 	* @param c The Client
 	* @param index The item number for the item of purchase
 	*/
@@ -88,17 +97,17 @@ public class Store {
 	* Returns the name of the store
 	* @return The name of the store
 	*/
-	public String getName() {
-		return name;
-	}
+	//public String getName() {
+	//	return name;
+	//}
 
 	/**
 	* Returns location of store
 	* @return The location of the store
 	*/
-	public String getLocation() {
-		return location;
-	}
+	//public String getLocation() {
+	//	return location;
+	//}
 
 	/**
 	* Prints welcome message to store with store name and location

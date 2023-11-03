@@ -1,3 +1,9 @@
+/**
+ * This class represents a Shorts clothing item, a subclass of ClothingItem
+ * @author Cayden Liao
+ * @version 1.0
+ */
+
 public class Shorts extends ClothingItem {
 	/**
 	* Initialize Shorts attributes of waistSize, front design, and back design
@@ -10,25 +16,25 @@ public class Shorts extends ClothingItem {
 	* Returns the waistSize attribute value of the Shorts 
 	* @return The value of the waistSize variable as a double
 	*/
-	public double getWaistSize() {
-		return waistSize;
-	}
+	//public double getWaistSize() {
+	//	return waistSize;
+	//}
 
 	/**
 	* Returns the length attribute value of the Shorts 
 	* @return The value of the length variable as a double
 	*/
-	public double getLength() {
-		return length;
-	}
+	//public double getLength() {
+	//	return length;
+	//}
 
 	/**
 	* Returns the hasPockets attribute value of the Shorts 
 	* @return The value of the hasPockets variable as a boolean
 	*/
-	public boolean getHasPockets() {
-		return hasPockets;
-	}
+	//public boolean getHasPockets() {
+	//	return hasPockets;
+	//}
 
 	/**
 	* Returns Shorts's attributes into a nicely formatted string along with 
@@ -37,31 +43,6 @@ public class Shorts extends ClothingItem {
 	*/
 	public String toString() {
 		return "Shorts:\n-----------\n" + super.toString() + "\nWaist Size: " + waistSize + "\nLength: " + length + "\nHas Pockets " + hasPockets;
-	}
-
-	/**
-	* No argument Constructor for Shorts with its color as white, 
-	* price as 10, waistSize as 38.7, length as 21.0, and no pockets
-	*/
-	public Shorts() {
-		super("White", 10.0);
-		waistSize = 38.7;
-		length = 21.0;
-		hasPockets = false;
-	}
-
-	/**
-	* Parameterzied Constructor for Shorts with its color as white, 
-	* price as 10 and other attributes to the user's desire
-	* @param waistSize The waistSize of the Shorts
-	* @param length The length of the Shorts
-	* @param hasPockets If the Shorts has pockets
-	*/
-	public Shorts(double waistSize, double length, boolean hasPockets) {
-		super("White", 10.0);
-		this.waistSize = waistSize;
-		this.length = length;
-		this.hasPockets = hasPockets;
 	}
 
 	/**
