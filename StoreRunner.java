@@ -7,11 +7,11 @@ public class StoreRunner {
 		* Flush out terminal before starting the store
 		*/
 		System.out.print("\033[H\033[2J");  
-    	System.out.flush();
+    		System.out.flush();
     	
-    	/**
-    	* Create Scanner for user inputs
-    	*/
+    		/**
+    		* Create Scanner for user inputs
+    		*/
 		Scanner input = new Scanner(System.in);
 
 		/**
