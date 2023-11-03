@@ -3,30 +3,30 @@ import java.util.*;
 public class StoreRunner {
 	public static void main(String[] args) {
 
-		/*
-		Flush out terminal before starting the store
+		/**
+		* Flush out terminal before starting the store
 		*/
 		System.out.print("\033[H\033[2J");  
     	System.out.flush();
     	
-    	/*
-    	Create Scanner for user inputs
+    	/**
+    	* Create Scanner for user inputs
     	*/
 		Scanner input = new Scanner(System.in);
 
-		/*
-		Initialize the store and the client
+		/**
+		* Initialize the store and the client
 		*/
 		Store clothingStore = new Store("Cayden's Clothing Store", "Online", "inventory.txt");
 		Client erik = new Client(100.0);
 
-		/*
-		Print welcome message
+		/**
+		* Print welcome message
 		*/
 		System.out.println(clothingStore.welcome());
 
-		/*
-		Main store loop that allows for user interaction for the 4 different menu options
+		/**
+		* Main store loop that allows for user interaction for the 4 different menu options
 		*/
 		while (true) {
 

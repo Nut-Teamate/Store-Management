@@ -3,22 +3,23 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class Store {
-	/*
-	Initialize Store attributes of name, location, and inventoryItems
+	/**
+	* Initialize Store attributes of name, location, and inventoryItems
 	*/
 	private String name;
 	private String location;
 	private List<ClothingItem> inventoryItems = new ArrayList<>();
 
-	/*
-	Returns the number of items in the inventory
+	/**
+	* Returns the number of items in the inventory
+	* @return The number of items in the inventory
 	*/
 	public int getInventorySize() {
 		return inventoryItems.size();
 	}
 
-	/*
-	Prints out the items in the store inventory in a nicely formatted list 
+	/**
+	* Prints out the items in the store inventory in a nicely formatted list 
 	*/
 	public void displayInventory() {
 		// Cleans the terminal for nicer GUI
@@ -33,9 +34,11 @@ public class Store {
 		}
 	}
 
-	/*
-	Loads the store inventory from a provided inventory file
-	File must be in the format each new line as the type of ClothingItem followed by its attributes seperated by commas
+	/**
+	* Loads the store inventory from a provided inventory file
+	* File must be in the format each new line as the type of 
+	* ClothingItem followed by its attributes seperated by commas
+	* @param file The file linked to the inventory
 	*/
 	private void loadInventoryFromFile(String file) {
 		try {
@@ -64,10 +67,12 @@ public class Store {
 		}
 	}
 
-	/*
-	Purchases an item from the store
-	Removes item from inventory and puts in Client's cart
-	Subtracts Client's total balance with the price of bought item
+	/**
+	* Purchases an item from the store
+	* Removes item from inventory and puts in Client's cart
+	* Subtracts Client's total balance with the price of bought item
+	* @param c The Client
+	* @param index The item number for the item of purchase
 	*/
 	public void purchase(Client c, String index) {
 		double clientBalance = c.getBalance();
@@ -79,40 +84,47 @@ public class Store {
 		System.out.println("You just bought:\n" + item.toString() + "\n");
 	}
 
-	/*
-	Returns the name of the store
+	/**
+	* Returns the name of the store
+	* @return The name of the store
 	*/
 	public String getName() {
 		return name;
 	}
 
-	/*
-	Returns location of store
+	/**
+	* Returns location of store
+	* @return The location of the store
 	*/
 	public String getLocation() {
 		return location;
 	}
 
-	/*
-	Prints welcome message to store with store name and location
+	/**
+	* Prints welcome message to store with store name and location
+	* @return A String object containing the welcome message
 	*/
 	public String welcome() {
 		return "Welcome to our store " + name + " located " + location + "! We hope you have a fun time shopping!";
 	}
 
-	/*
-	Prints display message with menu options for store
-	1. View items in inventory
-	2. Purchse an item
-	3. Views the Client's current balance
-	4. Exits the shop
+	/**
+	* Prints display message with menu options for store
+	* 1. View items in inventory
+	* 2. Purchse an item
+	* 3. Views the Client's current balance
+	* 4. Exits the shop
+	* @return A String object displaying the options of the store
 	*/
 	public String displayMenu() {
 		return "Store options:\n1. View Items\n2. Buy Item\n3. View Current Balance\n4. Exit\nChoose option:";
 	}
 
-	/*
-	Parameterzied Constructor the store with a changeable name, location, and inventory
+	/**
+	* Parameterzied Constructor the store with a changeable name, location, and inventory
+	* @param name The name of the Store
+	* @param location The location of the Store
+	* @param fileName The inventory file name
 	*/
 	public Store(String name, String location, String fileName) {
 		this.name = name;

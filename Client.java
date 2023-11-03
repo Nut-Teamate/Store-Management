@@ -1,51 +1,59 @@
 import java.util.*;
 
 public class Client {
-	/*
-	Initialize Client attributes of balance and cart
+	/**
+	* Initialize Client attributes of balance and cart
 	*/
 	private double balance;
 	private List<ClothingItem> cart = new ArrayList<>();
 
-	/*
-	No argument Constructor for Client with a default balance of 1000.0 and an empty shopping cart
+	/**
+	* No argument Constructor for Client with a default balance of 1000.0 
+	* and an empty shopping cart
 	*/
 	public Client() {
 		balance = 1000.0;
 		cart = new ArrayList<>();
 	}
 
-	/*
-	Parameterized Constructor for Client with an adjustable balance but still an empty shopping cart
+	/**
+	* Parameterized Constructor for Client with an adjustable balance 
+	* but still an empty shopping cart
 	*/
 	public Client(double balance) {
 		this.balance = balance;
 		cart = new ArrayList<>();
 	}
 
-	/*
-	Returns the balance attribute value of the Shorts 
+	/**
+	* Returns the balance attribute value of the Shorts
+	* @return The value of the variable balance
 	*/
 	public double getBalance() {
 		return balance;
 	}
 
-	/*
-	Allows the shop to set the current balance of the user for subtracting the price of the purchased item from the total client balance 
+	/**
+	* Allows the shop to set the current balance of the user for 
+	* subtracting the price of the purchased item from the total client balance 
+	* @param balance The chosen balance for the Client
+	* @return None
 	*/
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
 
-	/*
-	Adds the purchased item to the cart
+	/**
+	* Adds the purchased item to the cart
+	* @param item The ClothingItem to be added to the cart
+	* @return None
 	*/
 	public void addToCart(ClothingItem item) {
 		cart.add(item);
 	}
 
-	/*
-	Prints out user's current balance and bought items in the cart
+	/**
+	* Prints out user's current balance and bought items in the cart
 	*/
 	public String toString() {
 		System.out.print("\033[H\033[2J");  
