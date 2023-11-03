@@ -5,6 +5,7 @@ Project 2: Store Management System
 ## Running Directions
 
 External Libraries: None
+Make sure terminal is size (80x52)
 
 1. Download all files into the same directory
 2. Compile StoreRunner.java
