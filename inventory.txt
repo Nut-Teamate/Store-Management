@@ -1,0 +1,3 @@
+TShirt,black,10.0,Medium,Plain,Plain
+Shorts,white,10.0,38.7,21.0,false
+Shorts,green,20.0,10.1,21.0,true
