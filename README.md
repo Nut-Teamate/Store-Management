@@ -11,4 +11,9 @@ External Libraries: None
 3. Run StoreRunner
 
 In the shell:
+```bash
+git clone https://github.com/Nut-Teamate/Store-Management.git
+cd Store-Management
+javac StoreRunner.java
+java StoreRunner
 ```
